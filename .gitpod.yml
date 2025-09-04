@@ -11,3 +11,7 @@ ports:
   - port: 8888
     onOpen: open-browser
     visibility: public
+    
+environment:
+  JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+  PATH: /usr/lib/jvm/java-11-openjdk-amd64/bin:$PATH
