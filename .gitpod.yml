@@ -1,0 +1,13 @@
+tasks:
+  - init: |
+      sudo apt-get update
+      sudo apt-get install -y openjdk-11-jdk
+      pip install pyspark jupyterlab findspark
+
+    command: |
+      jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+
+ports:
+  - port: 8888
+    onOpen: open-browser
+    visibility: public
